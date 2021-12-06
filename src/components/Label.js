@@ -6,7 +6,7 @@ export default function Label(props) {
 
   return (
     <div>
-    <img src={url}/>
+    <img src={url} className="beer_image"/>
     </div>
   );
 }

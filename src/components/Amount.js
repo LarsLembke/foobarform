@@ -16,9 +16,13 @@ export default function Amount(props) {
 
   return (
       <div className="amount_buttons">
-        <button onClick={minus}> - </button>
+        <button onClick={minus}>
+        <img src="/images/minus.png" alt="minus" className="minus"/>
+        </button>
         <input type="number" value={counter} className="beerInput"/>
-        <button onClick={plus}> + </button>
+        <button onClick={plus}>
+        <img src="/images/plus.png" alt="plus" className="plus"/>
+        </button>
     </div>
   );
 }

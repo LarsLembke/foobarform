@@ -1,0 +1,35 @@
+.minus{
+  width: 4vh;
+  height: 3vh;
+  float: left;
+  
+}
+
+.plus{
+   width: 4vh; 
+   height: 3vh;
+   float: right;
+   
+}
+
+.beerInput {
+    background-color: transparent;
+    font-family: lato, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color:rgb(198, 192, 210);
+    left: 50%; 
+    right: 50%;
+    margin: auto;
+    position: relative;
+     
+  }
+
+  .amount_buttons {
+      display: flex; 
+      flex-direction: row;
+      width: 8vh;
+      
+   
+  }
