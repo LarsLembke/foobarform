@@ -9,18 +9,15 @@ import Beerinfo from "./components/Beerinfo";
 function App() {
 
   const [beerData, setBeerData] = useState([]);
-  const [beerOrder, setBeerOrder] = useState([{ name: 'GitHop', amount: 8}]);
+  const [beerOrder, setBeerOrder] = useState();
   const [tapData, setTapData] = useState([]);
 
 
 
 
 
-  useEffect(() => {
 
 
-      
-  }, []);
 
 
 
@@ -53,6 +50,8 @@ function App() {
               // get error message from body or default to response status
               const error = (data && data.message) || response.status;
               console.log(error)
+          } else {
+            console.log("!!!!!!!!!!!!!!!!!!succes!!!!!!!!!!!!!!!!!!", response.status)
           }
       
           
@@ -60,7 +59,7 @@ function App() {
 
 
       
-  },[]);
+  },[beerOrder]);
 
   if (!beerData) {
     console.log('njah')
@@ -70,9 +69,19 @@ function App() {
 console.log(tapData.taps)
   // const beerMap = beerData.map((b) => <Beerinfo data={b} taps={tapData.taps}/>)
 
+  function clicked (pr) {
+
+    console.log("clicked", pr)
+  }
+
+  function setTheOrder(data) {
+    setBeerOrder(data)
+    localStorage.clear()
+  }
+
   return (
     <>
-    <Form beer={beerData} taps={tapData.taps}/>
+    <Form beer={beerData} taps={tapData.taps} clicked={clicked} setTheOrder={setTheOrder}/>
     <Beerinfo beerData={beerData} tapData={tapData}/>
     <Payment />
     </>
