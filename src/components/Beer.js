@@ -5,7 +5,7 @@ import Amount from './Amount';
 
 export default function Beer(props) {
   return (
-    <div className="Beer">
+    <div className="beer">
         <Label url={props.label}/>
         <label for={props.name}>{props.name}</label>
     
