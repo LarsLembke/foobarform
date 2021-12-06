@@ -34,7 +34,7 @@ export default function Amount(props) {
         <button onClick={minus}>
         <img src="/images/minus.png" alt="minus" className="minus"/>
         </button>
-        <input type="number" value={counter} className="beerInput"/>
+        <input type="number" value={counter} className="beerInput" onInput={input}/>
         <button onClick={plus}>
         <img src="/images/plus.png" alt="plus" className="plus"/>
         </button>
