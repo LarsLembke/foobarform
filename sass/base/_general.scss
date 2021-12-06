@@ -13,10 +13,13 @@ body {
     overflow-x: hidden;
     margin-left: 2vh; 
     margin-right: 2vh;
+    margin-top: 2vh;
+    border: 2px solid rgb(198, 192, 210);
+    padding-bottom: 3vh;
 }
 
 .beer {
-    width: 18vh;
+    width: 16vh;
     border: 1px solid rgb(198, 192, 210);
     padding: 1vh;
 }
@@ -31,8 +34,8 @@ body {
 }
 
 .beer_image {
-    width: 18vh; 
-    height: 18vh;
+    width: 16vh; 
+    height: 16vh;
     display: block;
     margin: auto;
   }
@@ -43,5 +46,6 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     gap: 1vh;
+    padding-top: 1vh;
   }
   

@@ -19,11 +19,8 @@
     font-style: normal;
     font-size: 1rem;
     color:rgb(198, 192, 210);
-    left: 50%; 
-    right: 50%;
-    margin: auto;
-    position: relative;
-     
+    width: 8vh;
+    text-align: center;
   }
 
   .amount_buttons {
@@ -33,3 +30,17 @@
       
    
   }
+
+  .order {
+      margin-top: 1vh;
+    font-family: lato, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #21f0aa;
+    border: 1px solid #21f0aa;
+    background-color: #1c192f;
+    padding: 0.5vh;
+    border-radius: 0.5vh;
+    width: 10vh;
+  }
+

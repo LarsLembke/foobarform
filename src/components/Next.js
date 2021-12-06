@@ -8,7 +8,7 @@ export default function Next(props) {
 
   return (
     <div>
-     <button  onClick={clickering}>NEXT</button>
+     <button  onClick={clickering} className="order">ORDER</button>
     </div>
   );
 }
