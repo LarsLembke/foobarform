@@ -18,7 +18,7 @@ export default function Form(props) {
 
     if (tapsMap.includes(p.name)) {
         console.log('includes')
-   return <Beer name={p.name} label={p.label} orderData={orderData}/>
+   return <Beer name={p.name} label={p.label} orderData={orderData} details={props.details}/>
      
     } 
 

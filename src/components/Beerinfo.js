@@ -7,6 +7,10 @@ export default function Beerinfo(props) {
     return null;
   }
 
+  if (props.theDeets) {
+    console.log('THEDEEEEEEEEETZZZZ')
+  }
+
   console.log(props.beerData)
 
   const beerMap = props.beerData.map((b) => <Beerpopup data={b} taps={props.tapData.taps}/>)
