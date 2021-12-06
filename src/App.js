@@ -11,6 +11,7 @@ function App() {
   const [beerData, setBeerData] = useState([]);
   const [beerOrder, setBeerOrder] = useState();
   const [tapData, setTapData] = useState([]);
+  const [theDeets, setTheDeets] = useState("", false)
 
 
 
@@ -79,10 +80,17 @@ console.log(tapData.taps)
     localStorage.clear()
   }
 
+  function details(d,b) {
+    console.log(d,b)
+
+    setTheDeets(d,b)
+    
+  }
+
   return (
     <>
-    <Form beer={beerData} taps={tapData.taps} clicked={clicked} setTheOrder={setTheOrder}/>
-    <Beerinfo beerData={beerData} tapData={tapData}/>
+    <Form beer={beerData} taps={tapData.taps} clicked={clicked} setTheOrder={setTheOrder} details={details}/>
+    <Beerinfo beerData={beerData} tapData={tapData} theDeets={theDeets}/>
     <Payment />
     </>
   );

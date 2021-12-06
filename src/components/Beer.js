@@ -12,7 +12,7 @@ export default function Beer(props) {
 
   return (
     <div className="beer">
-        <Label url={props.label}/>
+        <Label url={props.label} details={props.details} name={props.name}/>
         <label className="beer_name" for={props.name}>{props.name}</label>
     
          <Amount start={orderB.amount} orderData={props.orderData} name={props.name}/>
