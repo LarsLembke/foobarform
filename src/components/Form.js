@@ -18,16 +18,51 @@ export default function Form(props) {
 
     if (tapsMap.includes(p.name)) {
         console.log('includes')
-   return <Beer name={p.name} label={p.label}/>
+   return <Beer name={p.name} label={p.label} orderData={orderData}/>
      
     } 
 
     }
 
+
+    function preDe (e) {
+      e.preventDefault()
+    }
+
+    function orderData(data, name) {
+      console.log(data, name)
+
+      localStorage.setItem(name, data)
+    }
+
+    function nextClick() {
+
+      const filterBO = props.beer.filter(b => localStorage.getItem(b.name))
+
+      console.log(filterBO)
+
+      const orderMap = filterBO.map((b) => {
+
+        if (!localStorage.getItem(b.name)) {
+          return;
+        }
+        const amount = localStorage.getItem(b.name)
+
+        return {
+          name: b.name,
+          amount: amount
+        }
+      })
+
+      console.log(orderMap);
+
+      props.setTheOrder(orderMap);
+    }
+
   return (
-    <form>
+    <form onSubmit={preDe}>
         {beerMap}
-        <Next />
+        <Next  clicked={nextClick}/>
     </form>
   );
 }
