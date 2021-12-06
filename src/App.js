@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './index.scss';
 import logo from './logo.svg';
 import './App.css';
 import Form from './components/Form';
