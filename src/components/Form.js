@@ -60,10 +60,12 @@ export default function Form(props) {
     }
 
   return (
+    <div className="order_container">
     <form onSubmit={preDe}>
         {beerMap}
-        <Next  clicked={nextClick}/>
     </form>
+    <Next  clicked={nextClick}/>
+    </div>
   );
 }
 
