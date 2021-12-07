@@ -80,17 +80,17 @@ console.log(tapData.taps)
     localStorage.clear()
   }
 
-  function details(d,b) {
-    console.log(d,b)
+  function details(d) {
+    console.log(d)
 
-    setTheDeets(d,b)
+    setTheDeets(d)
     
   }
 
   return (
     <>
     <Form beer={beerData} taps={tapData.taps} clicked={clicked} setTheOrder={setTheOrder} details={details}/>
-    <Beerinfo beerData={beerData} tapData={tapData} theDeets={theDeets}/>
+    <Beerinfo beerData={beerData} tapData={tapData} theDeets={theDeets}  details={details}/>
     <Payment />
     </>
   );

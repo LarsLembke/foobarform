@@ -6,7 +6,7 @@ export default function Label(props) {
 
     function clickLabel() {
       console.log(props.name)
-      props.details(props.name, true)
+      props.details(props.name)
     }
 
   return (

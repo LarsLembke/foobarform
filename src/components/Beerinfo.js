@@ -15,15 +15,14 @@ export default function Beerinfo(props) {
 
   const beerFilter = props.beerData.filter(b => b.name === props.theDeets);
 
-  console.log(beerFilter);
+  console.log(beerFilter[0]);
 
   const beerMap = props.beerData.map((b) => <Beerpopup data={b} taps={props.tapData.taps}/>)
 
 
   return (
     <div>
-      {beerFilter}
-      <Beerpopup data={beerFilter[0]} taps={props.tapData.taps}/>
+      <Beerpopup data={beerFilter} taps={props.tapData.taps}  details={props.details}/>
     </div>
   );
 }

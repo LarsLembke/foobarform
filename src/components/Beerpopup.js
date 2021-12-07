@@ -5,7 +5,7 @@ import Description from './Description';
 export default function Beerpopup(props) {
 
 
-    if (!props.data || !props.taps) {
+    if (!props.data[0] || !props.taps) {
         return null;
     }
   //   console.log(props.data.label)
@@ -28,15 +28,30 @@ export default function Beerpopup(props) {
 
   //   }
 
-  console.log(props.data)
 
+  const theBeer = props.data[0]
+
+  console.log(theBeer.name)
+
+  const name = theBeer.name
+  const alc = theBeer.alc
+  const cat = theBeer.category
+  const url = theBeer.label
+  const desc = theBeer.description
+
+  function xClick () {
+    console.log("XXXX")
+
+    props.details(null)
+  }
 
 
   return (
     <div>
-        <Generalinfo name={props.data.name} alc={props.data.alc} cat={props.data.category}/>
-    <Label url={props.data.label}/>
-    <Description desc={props.data.description}/>
+      <button onClick={xClick}>X</button>
+        <Generalinfo name={name} alc={alc} cat={cat}/>
+    <Label url={url}/>
+    <Description desc={desc}/>
     </div>
   );
 }
