@@ -24,6 +24,8 @@
   }
 
   .amount_buttons {
+      margin-top: 1vh;
+      margin-bottom: 1vh;
       display: flex; 
       flex-direction: row;
       width: 8vh;
@@ -41,5 +43,11 @@
     padding: 0.5vh;
     border-radius: 0.5vh;
     width: 10vh;
+    margin-top: 3vh;
+    box-shadow: 1px 1px 5px black;
+  }
+
+  .order_container {
+      text-align: center;
   }
 
