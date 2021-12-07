@@ -91,7 +91,7 @@ console.log(tapData.taps)
     <>
     <Form beer={beerData} taps={tapData.taps} clicked={clicked} setTheOrder={setTheOrder} details={details}/>
     <Beerinfo beerData={beerData} tapData={tapData} theDeets={theDeets}  details={details}/>
-    <Payment />
+    <Payment beerOrder={beerOrder}/>
     </>
   );
 }
