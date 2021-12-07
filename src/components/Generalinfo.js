@@ -13,7 +13,7 @@ export default function Generalinfo(props) {
     <div>
     <h1>{props.name}</h1>
     <h2>{props.cat}</h2>
-    <p>{props.alc}% alc</p>
+    <p className="alc">{props.alc}% alc</p>
     </div>
   );
 }

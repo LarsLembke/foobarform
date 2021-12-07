@@ -5,17 +5,17 @@ export default function Description (props) {
   console.log(props.desc)
 
     return (
-      <div>
+      <div className="popup_description">
         <p>{props.desc.overAllImpression}</p>
-        <h3>Description</h3>
+        <h3>Description:</h3>
         <p>Aroma:</p>
         <p>{props.desc.aroma}</p>
         <p>Appearance:</p>
         <p>{props.desc.appearance}</p>
         <p>Flavor:</p>
         <p>{props.desc.flavor}</p>
-        <p>Mouthfeel</p>
-        <p>{props.desc.mouthFeel}</p>
+        <p>Mouthfeel:</p>
+        <p>{props.desc.mouthfeel}</p>
       </div>
     );
   }
