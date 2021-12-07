@@ -61,6 +61,7 @@ export default function Form(props) {
 
   return (
     <div className="order_container">
+      <img src="/images/foobar_logo.png" alt="foobar logo" className="foobar_logo_mobile" />
     <form onSubmit={preDe}>
         {beerMap}
     </form>
