@@ -5,9 +5,9 @@ import Description from './Description';
 export default function Beerpopup(props) {
 
 
-  //   if (!props.data || !props.taps) {
-  //       return null;
-  //   }
+    if (!props.data || !props.taps) {
+        return null;
+    }
   //   console.log(props.data.label)
 
   //   const tapsMap = props.taps.map((t) => t.beer)
@@ -28,14 +28,16 @@ export default function Beerpopup(props) {
 
   //   }
 
+  console.log(props.data)
+
 
 
   return (
-    null
-    // <div>
-    // <figure></figure>
-    // {beerOnTap()}
-    // </div>
+    <div>
+        <Generalinfo name={props.data.name} alc={props.data.alc} cat={props.data.category}/>
+    <Label url={props.data.label}/>
+    <Description desc={props.data.description}/>
+    </div>
   );
 }
 
