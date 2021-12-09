@@ -1,3 +1,5 @@
+// MOBILE
+
 .minus{
   width: 4vh;
   height: 3vh;
@@ -49,5 +51,56 @@
 
   .order_container {
       text-align: center;
+  }
+
+  // IPAD
+
+  @media screen and (min-width: 415px) {
+    
+    .beerInput {
+        width: 7vh;
+        
+      }
+
+      .order {
+        padding: 0.8vh;
+        width: 12vh;
+        margin-top: 4vh;
+        margin-bottom: 1vh;
+      }
+  }
+
+  // WEB
+
+  @media screen and (min-width: 769px) {
+
+    .minus{
+      width: 5vh;
+      height: 4vh;
+
+    }
+    
+    .plus{
+       width: 5vh; 
+       height: 4vh;
+  
+    }
+
+    .beerInput {
+      position: relative;
+      left: 0.5vh;
+      text-align: center;
+      width: 10vh;
+    }
+
+    .order {
+      
+      padding: 1vh;
+      border-radius: 0.5vh;
+      width: 12vh;
+      margin-top: 3vh;
+      box-shadow: 1px 1px 5px black;
+    }
+
   }
 

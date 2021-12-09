@@ -1,3 +1,5 @@
+// MOBILE
+
 * {
     margin: 0;
 }
@@ -61,4 +63,80 @@ body {
     
   }
 
+//   IPAD
+
+  @media screen and (min-width: 415px) {
+    .foobar_logo_mobile {
+        width: 25vh; 
+        height: 16vh;
+        margin-bottom: 2vh;
+    }
+
+    body {
+        margin: 5vh;
+    }
+
+    .beer:first-child {
+        margin-top: 0vh;
+    }
+    
+    .beer:nth-child(2) {
+        margin-top: 0vh;
+    }
+
+    form {
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2vh;
+        justify-content: center;
+        overflow-y: hidden;
+        
+        
+      }
+  }
+
+//   WEB
+
+  @media screen and (min-width: 769px) {
+
+    .foobar_logo_mobile {
+        position: relative;
+        top: -6vh;
+        
+    }
+
+
+body {
+    margin-top: 7vh; 
+    margin-bottom: 3vh;
+    margin-left: 25vh; 
+    margin-right: 25vh;
+    padding-bottom: 1.5vh;
+}
+
+    .beer {
+        width: 20vh;
+        padding-top: 1.5vh; 
+        padding-left: 1.5vh; 
+        padding-right: 1.5vh; 
+        padding-bottom: 0.5vh;
+        border: 1px solid rgb(198, 192, 210);
+        flex-basis: 150px;
+        box-shadow: 1px 1px 5px black;
+    }
+
+    .beer_image {
+        width: 20vh; 
+        height: 20vh;
+      }
+
+    form {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10vh;
+        padding-right: 10vh;
+        margin-top: -7vh;
+    }
+}
  

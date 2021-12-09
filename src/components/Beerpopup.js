@@ -52,9 +52,11 @@ export default function Beerpopup(props) {
       <button onClick={xClick}>
         <img src="/images/back_arrow.png" alt="back arrow" className="back_arrow" />
       </button>
+      <div className="popup_grid">
         <Generalinfo name={name} alc={alc} cat={cat}/>
         <div className="popup_image">
     <Label url={url}/>
+    </div>
     </div>
     <Description desc={desc}/>
     </div>

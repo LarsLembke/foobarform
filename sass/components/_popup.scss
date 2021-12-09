@@ -1,3 +1,5 @@
+// MOBILE
+
 .beer_popup {
     background-color: #2a283d;
     height: 100vh;
@@ -48,6 +50,14 @@
     text-align: center;
 }
 
+.popup_grid {
+    border: 1px solid rgb(198, 192, 210);
+    margin: 2vh;
+    padding: 2vh;
+    position: relative;
+    background-color:#464254;
+}
+
 .alc {
     color: rgb(198, 192, 210);
     font-family: lato, sans-serif;
@@ -61,4 +71,94 @@
     margin-top: 1vh;
     width: 6vh; 
     height: 6vh;
+}
+
+.aroma, .appearance, .flavor, .mouthfeel {
+    font-weight: 400;
+    margin-top: 1vh; 
+    margin-bottom: 1vh;
+}
+
+// IPAD
+
+@media screen and (min-width: 415px) {
+
+    .popup_image img{
+        width: 25vh;
+        height: 25vh;
+        margin-top: 0;
+        
+    }
+
+    .beer_popup_border {
+        margin: 2vh;
+    }
+
+    .popup_description {
+        margin: 5vh; 
+        margin-top: 3vh;
+    }
+
+    .popup_grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8vh;
+        margin-left: 5vh; 
+        margin-right: 5vh;
+        margin-top: -1vh;
+        border: 1px solid rgb(198, 192, 210);
+        padding: 3vh;
+        position: relative; 
+        top: -2vh;
+        background-color: #464254;
+    }
+
+    .beer_popup h1 {
+        position: relative; 
+        top: 30%;
+    }
+
+    .beer_popup h2 {
+        position: relative; 
+        top: 30%;
+    }
+    
+    .alc {
+        position: relative; 
+        top: 30%;
+    }
+
+    .back_arrow {
+        margin-left: 2vh; 
+        margin-top: 2vh;
+        width: 6vh; 
+        height: 6vh;
+        position: relative; 
+        z-index: 2;
+    }
+
+}
+
+// WEB
+
+@media screen and (min-width: 769px) {
+
+    .beer_popup_border {
+        margin-top: 7vh; 
+    margin-bottom: 3vh;
+    margin-left: 25vh; 
+    margin-right: 25vh;
+    padding-bottom: 1.5vh;
+    padding-left: 10vh; 
+        padding-right: 10vh;
+        border: 2px solid rgb(198, 192, 210);
+    }
+
+    .popup_grid {
+        gap: 10vh;
+        padding: 1vh;
+    }
+
+
 }
