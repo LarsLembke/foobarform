@@ -4,11 +4,11 @@ import Submit from './Submit';
 
 export default function Payment(props) {
 
-  if (!props.beerOrder) {
+  if (!props.orderData) {
     return null;
   }
 
-  const beerOrderMap = props.beerOrder.map(b => <li>{b.amount} x {b.name}</li>)
+  const beerOrderMap = props.orderData.map(b => <li>{b.amount} x {b.name}</li>)
 
   return (
     <div>
@@ -19,7 +19,7 @@ export default function Payment(props) {
       <form>
         <Name />
         <Cardnumber />
-        <Submit />
+        <Submit setTheOrder={props.setTheOrder}/>
       </form>
     </div>
   );

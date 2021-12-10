@@ -11,6 +11,7 @@ function App() {
   const [beerData, setBeerData] = useState([]);
   const [beerOrder, setBeerOrder] = useState();
   const [tapData, setTapData] = useState([]);
+  const [orderData, setOrderData] = useState([]);
   const [theDeets, setTheDeets] = useState("", false)
 
 
@@ -75,9 +76,13 @@ console.log(tapData.taps)
     console.log("clicked", pr)
   }
 
-  function setTheOrder(data) {
-    setBeerOrder(data)
+  function setTheOrder() {
+    setBeerOrder(orderData)
     localStorage.clear()
+  }
+
+  function sendDataToPayment(data) {
+    setOrderData(data)
   }
 
   function details(d) {
@@ -89,9 +94,9 @@ console.log(tapData.taps)
 
   return (
     <>
-    <Form beer={beerData} taps={tapData.taps} clicked={clicked} setTheOrder={setTheOrder} details={details}/>
+    <Form beer={beerData} taps={tapData.taps} clicked={clicked} setTheOrder={setTheOrder} details={details} sendDataToPayment={sendDataToPayment}/>
     <Beerinfo beerData={beerData} tapData={tapData} theDeets={theDeets}  details={details}/>
-    <Payment beerOrder={beerOrder}/>
+    <Payment beerOrder={beerOrder} setTheOrder={setTheOrder}  orderData={orderData}/>
     </>
   );
 }

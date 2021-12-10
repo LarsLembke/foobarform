@@ -56,7 +56,7 @@ export default function Form(props) {
 
       console.log(orderMap);
 
-      props.setTheOrder(orderMap);
+      props.sendDataToPayment(orderMap);
     }
 
   return (
