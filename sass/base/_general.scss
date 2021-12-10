@@ -91,6 +91,7 @@ body {
         gap: 2vh;
         justify-content: center;
         overflow-y: hidden;
+       
         
         
       }
@@ -124,6 +125,7 @@ body {
         border: 1px solid rgb(198, 192, 210);
         flex-basis: 150px;
         box-shadow: 1px 1px 5px black;
+        cursor: pointer;
     }
 
     .beer_image {
