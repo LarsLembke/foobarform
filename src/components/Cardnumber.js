@@ -105,19 +105,20 @@ function yyInput (e) {
   return (
     <>
     <div className="card">
+      <div className="card_number_fields">
       <p className="card_number">Card number:</p>
       <label>Card number</label>
       <input className="card_number_input" type="text" value={ccNumber} onChange={formatAndSetCcNumber} onBlur={creditCardValidation} placeholder="E.g.: 1234 5678 9012 3456"/>
-      <div>
-        <div className="card2">
+      </div>
+          <div className="exp_date_fields">
           <p className="exp_date">Expiration date:</p>
         <label>Expiration date</label>
         <div className="exp_date_input">
         <input type="text" placeholder="MM" maxLength="2" onBlur={mmInput}/>
         <input type="text" placeholder="YY" maxLength="2" onBlur={yyInput}/>
+        </div>
       </div>
-      </div>
-      </div>
+     
       </div>
     </>
   );

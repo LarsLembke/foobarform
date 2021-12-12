@@ -62,7 +62,7 @@
     margin-top: 3vh;
     box-shadow: 1px 1px 5px black;
     position: relative; 
-    bottom: 5vh;
+    bottom: 3vh;
 
   }
 
@@ -121,10 +121,16 @@
       
       padding: 1vh;
       border-radius: 0.5vh;
+      font-size: 1.2rem;
       width: 12vh;
       margin-top: 3vh;
       box-shadow: 1px 1px 5px black;
     }
 
+    .sub_and_pay_button {
+      
+      padding: 1vh;
+  
+    }
   }
 

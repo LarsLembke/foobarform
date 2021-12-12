@@ -171,7 +171,7 @@ font-size:  1.2rem;
 .payment_border {
     
         margin-top: 7vh; 
-        margin-bottom: 3vh;
+        margin-bottom: 4vh;
         margin-left: 25vh; 
         margin-right: 25vh;
         padding-bottom: 1.5vh;
@@ -186,8 +186,57 @@ font-size:  1.2rem;
 }
 
 .payment form {
+    margin-top: 8vh;
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 5vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+    gap: 3vh;
+    justify-content: space-between;
+   
 }
+
+.card {
+    display: flex; 
+    flex-direction: row;
+    gap: 3vh;
 }
+
+.cardholders_name_fields {
+    grid-column: 2/2;
+}
+
+.exp_date_input {
+    margin: 0;
+}
+
+
+
+.payment .back_arrow {
+        margin-left: 2vh; 
+        margin-top: 2vh;
+        width: 6vh; 
+        height: 6vh;
+        position: relative; 
+        z-index: 2;
+    }
+
+    .payment li {
+        font-size: 1rem;
+    }
+
+    .payment p {
+        font-size: 1rem;
+    }
+    
+    
+    ::placeholder {
+        font-size: 1rem;
+    }
+    
+    .payment input {
+    font-size:  1rem;
+    width: 20vh;
+    
+    }
+}
+
