@@ -68,7 +68,7 @@ const jcb = /^(?:2131|1800|35\d{3})\d{11}$/;
       return true;
      } else 
      {
-     alert("Please enter a valid credit card number.");
+      e.target.style.borderColor = "red";
      return false;
      }
 }
@@ -77,7 +77,11 @@ function mmInput (e) {
   const month = e.target.value;
   
   if (month > 12) {
-    alert("Please enter a valid month.")
+    e.target.style.borderColor = "red";
+
+  } else {
+    e.target.style.borderColor = "#fff";
+
   }
 }
  
@@ -88,10 +92,13 @@ function yyInput (e) {
   console.log()
   
   if ( year.length === 2 && year < currentYear.toString().slice(2,4)) {
-    alert("Please enter a valid year.")
-  
+    // alert("Please enter a valid year.")
+    e.target.style.borderColor = "red";
 
-  };
+  } else {
+    e.target.style.borderColor = "#fff";
+
+  }
     
 }
 
@@ -106,8 +113,8 @@ function yyInput (e) {
           <p className="exp_date">Expiration date:</p>
         <label>Expiration date</label>
         <div className="exp_date_input">
-        <input type="text" placeholder="MM" maxLength="2" onChange={mmInput}/>
-        <input type="text" placeholder="YY" maxLength="2" onChange={yyInput}/>
+        <input type="text" placeholder="MM" maxLength="2" onBlur={mmInput}/>
+        <input type="text" placeholder="YY" maxLength="2" onBlur={yyInput}/>
       </div>
       </div>
       </div>
