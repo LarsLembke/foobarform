@@ -14,7 +14,9 @@ export default function Submit(props) {
 
 
   return (
-    <button onClick={handler}>Pay and order</button>
+    <div className="sub_and_pay">
+    <button onClick={handler} className="sub_and_pay_button">SUBMIT & PAY</button>
+    </div>
   );
 }
 

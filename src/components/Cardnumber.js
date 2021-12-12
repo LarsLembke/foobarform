@@ -89,18 +89,28 @@ function yyInput (e) {
   
   if ( year.length === 2 && year < currentYear.toString().slice(2,4)) {
     alert("Please enter a valid year.")
+  
+
+  };
     
-  }
 }
 
   return (
     <>
-      <label>Cardnumber</label>
-      <input type="text" value={ccNumber} onChange={formatAndSetCcNumber} onBlur={creditCardValidation} placeholder="Fx.: 1234 5678 9012 3456"/>
+    <div className="card">
+      <p className="card_number">Card number:</p>
+      <label>Card number</label>
+      <input className="card_number_input" type="text" value={ccNumber} onChange={formatAndSetCcNumber} onBlur={creditCardValidation} placeholder="E.g.: 1234 5678 9012 3456"/>
       <div>
+        <div className="card2">
+          <p className="exp_date">Expiration date:</p>
         <label>Expiration date</label>
+        <div className="exp_date_input">
         <input type="text" placeholder="MM" maxLength="2" onChange={mmInput}/>
         <input type="text" placeholder="YY" maxLength="2" onChange={yyInput}/>
+      </div>
+      </div>
+      </div>
       </div>
     </>
   );
