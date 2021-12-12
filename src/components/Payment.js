@@ -4,8 +4,16 @@ import Submit from './Submit';
 
 export default function Payment(props) {
 
-  if (!props.orderData) {
+  if (!props.orderData.length) {
+    console.log("null")
     return null;
+  }
+
+  console.log(props.orderData)
+
+  function backHandler(e) {
+    // e.target.parentElement.parentElement.style.display = "none";
+    props.setOrderData([]);
   }
 
 
@@ -18,7 +26,7 @@ export default function Payment(props) {
     <div className="payment">
       <div className="payment_border">
   
-        <img src="/images/back_arrow.png" alt="back arrow" className="back_arrow" />
+        <img src="/images/back_arrow.png" alt="back arrow" className="back_arrow" onClick={backHandler}/>
       <div className="inner_border">
       <h3>Your order:</h3>
       <ul>
