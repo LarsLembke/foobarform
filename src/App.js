@@ -54,6 +54,7 @@ function App() {
               console.log(error)
           } else {
             console.log("!!!!!!!!!!!!!!!!!!succes!!!!!!!!!!!!!!!!!!", response.status)
+            localStorage.clear()
           }
       
           
@@ -78,7 +79,6 @@ console.log(tapData.taps)
 
   function setTheOrder() {
     setBeerOrder(orderData)
-    localStorage.clear()
   }
 
   function sendDataToPayment(data) {
@@ -96,7 +96,7 @@ console.log(tapData.taps)
     <>
     <Form beer={beerData} taps={tapData.taps} clicked={clicked} setTheOrder={setTheOrder} details={details} sendDataToPayment={sendDataToPayment}/>
     <Beerinfo beerData={beerData} tapData={tapData} theDeets={theDeets}  details={details}/>
-    <Payment beerOrder={beerOrder} setTheOrder={setTheOrder}  orderData={orderData}/>
+    <Payment beerOrder={beerOrder} setTheOrder={setTheOrder}  orderData={orderData} setOrderData={setOrderData}/>
     </>
   );
 }
