@@ -137,6 +137,7 @@ label {
 
 .payment .inner_border {
     margin: 5vh; 
+    margin-top: 2vh;
 }
 
 .payment form {
@@ -144,4 +145,43 @@ label {
     grid-template-rows: 1fr;
 }
 
+.payment p {
+    font-size: 1.2rem;
+}
+
+
+::placeholder {
+    font-size: 0.9rem;
+}
+
+.payment input {
+font-size:  1.2rem;
+}
+
+.payment li {
+    font-size: 1.2rem;
+}
+
+}
+
+// WEB
+
+@media screen and (min-width: 769px) {
+
+.payment_border {
+    
+        margin-top: 7vh; 
+        margin-bottom: 3vh;
+        margin-left: 25vh; 
+        margin-right: 25vh;
+        padding-bottom: 1.5vh;
+    
+}
+
+.payment .inner_border {
+    margin-left: 5vh; 
+    margin-bottom: 5vh; 
+    margin-right: 5vh;
+    margin-top: -5vh;
+}
 }
