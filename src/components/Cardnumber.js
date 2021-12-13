@@ -68,7 +68,7 @@ const jcb = /^(?:2131|1800|35\d{3})\d{11}$/;
       return true;
      } else 
      {
-      e.target.style.borderColor = "red";
+      e.target.style.borderColor = "#e3024e";
      return false;
      }
 }
@@ -77,10 +77,10 @@ function mmInput (e) {
   const month = e.target.value;
   
   if (month > 12) {
-    e.target.style.borderColor = "red";
+    e.target.style.borderColor = "#e3024e";
 
   } else {
-    e.target.style.borderColor = "#fff";
+    e.target.style.borderColor = "#c6c0d2;";
 
   }
 }
@@ -93,10 +93,10 @@ function yyInput (e) {
   
   if ( year.length === 2 && year < currentYear.toString().slice(2,4)) {
     // alert("Please enter a valid year.")
-    e.target.style.borderColor = "red";
+    e.target.style.borderColor = "#e3024e";
 
   } else {
-    e.target.style.borderColor = "#fff";
+    e.target.style.borderColor = "#c6c0d2;";
 
   }
     
