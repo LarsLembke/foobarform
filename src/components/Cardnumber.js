@@ -80,7 +80,7 @@ function mmInput (e) {
     e.target.style.borderColor = "#e3024e";
 
   } else {
-    e.target.style.borderColor = "#c6c0d2;";
+    e.target.style.borderColor = "#c6c0d2";
 
   }
 }
@@ -96,7 +96,7 @@ function yyInput (e) {
     e.target.style.borderColor = "#e3024e";
 
   } else {
-    e.target.style.borderColor = "#c6c0d2;";
+    e.target.style.borderColor = "#c6c0d2";
 
   }
     
