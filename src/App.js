@@ -14,15 +14,6 @@ function App() {
   const [orderData, setOrderData] = useState([]);
   const [theDeets, setTheDeets] = useState("", false)
 
-
-
-
-
-
-
-
-
-
   useEffect(() => {
 
     fetch("https://foobarspacemonkeys.herokuapp.com/beertypes")
@@ -55,12 +46,8 @@ function App() {
           } else {
             console.log("!!!!!!!!!!!!!!!!!!succes!!!!!!!!!!!!!!!!!!", response.status)
             localStorage.clear()
-          }
-      
-          
+          }  
       })
-
-
       
   },[beerOrder]);
 
@@ -69,11 +56,7 @@ function App() {
     return null;
   }
 
-console.log(tapData.taps)
-  // const beerMap = beerData.map((b) => <Beerinfo data={b} taps={tapData.taps}/>)
-
   function clicked (pr) {
-
     console.log("clicked", pr)
   }
 
@@ -87,16 +70,14 @@ console.log(tapData.taps)
 
   function details(d) {
     console.log(d)
-
-    setTheDeets(d)
-    
+    setTheDeets(d) 
   }
 
   return (
     <>
-    <Form beer={beerData} taps={tapData.taps} clicked={clicked} setTheOrder={setTheOrder} details={details} sendDataToPayment={sendDataToPayment}/>
-    <Beerinfo beerData={beerData} tapData={tapData} theDeets={theDeets}  details={details}/>
-    <Payment beerOrder={beerOrder} setTheOrder={setTheOrder}  orderData={orderData} setOrderData={setOrderData}/>
+      <Form beer={beerData} taps={tapData.taps} clicked={clicked} setTheOrder={setTheOrder} details={details} sendDataToPayment={sendDataToPayment}/>
+      <Beerinfo beerData={beerData} tapData={tapData} theDeets={theDeets}  details={details}/>
+      <Payment beerOrder={beerOrder} setTheOrder={setTheOrder}  orderData={orderData} setOrderData={setOrderData}/>
     </>
   );
 }

@@ -15,14 +15,11 @@ export default function Amount(props) {
     function minus(e) {
         e.preventDefault()
         setCounter((prevCounter) => prevCounter ? prevCounter - 1 : 0)
-
         props.orderData(counter - 1, props.name)
     }
 
     function input(e) {
       e.preventDefault()
-      // console.log(e)
-
       const integer = parseInt(e.target.value)
       setCounter(integer)
       props.orderData(integer, props.name)

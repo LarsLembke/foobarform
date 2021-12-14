@@ -12,20 +12,14 @@ export default function Payment(props) {
   console.log(props.orderData)
 
   function backHandler(e) {
-    // e.target.parentElement.parentElement.style.display = "none";
     props.setOrderData([]);
   }
-
-
-
-  
 
   const beerOrderMap = props.orderData.map(b => <li>{b.amount} x {b.name}</li>)
 
   return (
     <div className="payment">
       <div className="payment_border">
-  
         <img src="/images/back_arrow.png" alt="back arrow" className="back_arrow" onClick={backHandler}/>
       <div className="inner_border">
       <h3>Your order:</h3>
