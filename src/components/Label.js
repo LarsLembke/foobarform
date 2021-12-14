@@ -22,7 +22,7 @@ export default function Label(props) {
 
   return (
     <div>
-    <img src={url} className="beer_image" onClick={clickLabel}/>
+    <img src={url} className="beer_image" onClick={clickLabel} alt={props.name}/>
     </div>
   );
 }
