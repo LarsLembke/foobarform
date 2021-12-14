@@ -6,7 +6,9 @@ export default function Label(props) {
     return null
   }
 
-    const url = `images/${props.url}`
+  const imgUrl = props.url.split(".")
+
+    const url = `images/${imgUrl[0]}.webp`
 
     function clickLabel() {
 

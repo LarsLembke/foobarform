@@ -20,7 +20,7 @@ export default function Payment(props) {
   return (
     <div className="payment">
       <div className="payment_border">
-        <img src="./images/back_arrow.png" alt="back arrow" className="back_arrow" onClick={backHandler}/>
+        <img src="./images/back_arrow.webp" alt="back arrow" className="back_arrow" onClick={backHandler}/>
       <div className="inner_border">
       <h3>Your order:</h3>
       <ul>
