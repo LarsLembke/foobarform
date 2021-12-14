@@ -24,11 +24,11 @@ export default function Beerpopup(props) {
   return (
     <div className="beer_popup">
       <div className="foobar_logo_container">
-            <img src="/images/foobar_logo.png" alt="foobar logo" className="foobar_logo_popup" />
+            <img src="./images/foobar_logo.png" alt="foobar logo" className="foobar_logo_popup" />
             </div>
       <div className="beer_popup_border">
       <button onClick={xClick}>
-        <img src="/images/back_arrow.png" alt="back arrow" className="back_arrow" />
+        <img src="./images/back_arrow.png" alt="back arrow" className="back_arrow" />
       </button>
       <div className="popup_grid">
         <Generalinfo name={name} alc={alc} cat={cat}/>
