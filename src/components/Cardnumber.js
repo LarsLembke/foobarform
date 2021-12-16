@@ -63,7 +63,11 @@ function creditCardValidation(e)
      {
        console.log("jcb")
       return true;
-     } else 
+     } else if(cardNumber.length == 16)
+     {
+       console.log("jcb")
+      return true;
+     } else
      {
       e.target.style.borderColor = "#e3024e";
      return false;
@@ -105,7 +109,7 @@ function yyInput (e) {
       <div className="card_number_fields">
       <p className="card_number">Card number:</p>
       <label>Card number</label>
-      <input className="card_number_input" type="text" value={ccNumber} onChange={formatAndSetCcNumber} onBlur={creditCardValidation} placeholder="E.g.: 1234 5678 9012 3456"/>
+      <input className="card_number_input" type="text" value={ccNumber} onChange={formatAndSetCcNumber} onBlur={creditCardValidation} placeholder="E.g.: 1234 5678 9012 3456" minLength="16"/>
       </div>
           <div className="exp_date_fields">
           <p className="exp_date">Expiration date:</p>
