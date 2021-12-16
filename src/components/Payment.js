@@ -19,6 +19,7 @@ export default function Payment(props) {
 
   return (
     <div className="payment">
+       <img src="./images/foobar_logo.webp" alt="foobar logo" className="foobar_logo" />
       <div className="payment_border">
         <img src="./images/back_arrow.webp" alt="back arrow" className="back_arrow" onClick={backHandler}/>
       <div className="inner_border">

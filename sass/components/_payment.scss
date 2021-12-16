@@ -1,5 +1,9 @@
 // MOBILE
 
+.foobar_logo {
+    display: none;
+}
+
 .payment {
     display: inline;
     position: fixed;
@@ -181,12 +185,27 @@ font-size:  1.2rem;
 
 @media screen and (min-width: 769px) {
 
+
+.foobar_logo {
+    position: relative; 
+    z-index: 2;
+    display: inline;
+    width: 25vh; 
+    height: 16vh;
+    margin: 0 auto;
+    top: 2.2vh;
+}
+
+.payment {
+    text-align: center;
+}
+
 .payment_border {
         display: grid; 
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin-top: 7vh; 
-        margin-bottom: 7vh;
+        margin-bottom: 3.9vh;
         margin-left: 25vh; 
         margin-right: 25vh;
         padding-bottom: 1.5vh;
@@ -211,7 +230,8 @@ font-size:  1.2rem;
     grid-column: 2/2;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
+    gap: 5vh; 
+    margin-top: 4vh;
 }
 
 .card {

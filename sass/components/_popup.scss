@@ -64,9 +64,10 @@
 }
 
 .alc {
+    font-size: 1.2rem;
     color: rgb(198, 192, 210);
     font-family: lato, sans-serif;
-    font-weight: 100;
+    font-weight: 200;
     font-style: normal;
     text-align: center;
 }
@@ -170,6 +171,7 @@
 // WEB
 
 @media screen and (min-width: 769px) {
+
 
     .foobar_logo_popup {
     width: 25vh; 
