@@ -29,6 +29,8 @@ body {
 
 .beer:first-child {
     margin-top: 1.5vh;
+    cursor: pointer;
+
 }
 
 .beer:nth-child(2) {
@@ -50,11 +52,15 @@ body {
     height: 15vh;
     display: block;
     margin: auto;
+    cursor: pointer;
+
   }
 .beer_image:hover {
     animation: beerhover_kf 0.15s linear;
     transform: scale(1.05);
     box-shadow: 5px 6px 9px -4px rgba(0,0,0,0.69);
+    cursor: pointer;
+
 
 
 }
@@ -64,9 +70,11 @@ body {
         transform: scale(1);
         box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
 
+
     } to {
         transform: scale(1.05);
         box-shadow: 5px 6px 9px -4px rgba(0,0,0,0.69);
+
 
     }
     
@@ -149,7 +157,6 @@ body {
         border: 1px solid rgb(198, 192, 210);
         flex-basis: 150px;
         box-shadow: 1px 1px 5px black;
-        cursor: pointer;
     }
 
     .beer_image {
